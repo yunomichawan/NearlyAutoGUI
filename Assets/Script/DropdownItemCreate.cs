@@ -29,6 +29,9 @@ public class DropdownItemCreate : MonoBehaviour
         /// 属性
         /// </summary>
         Attribute,
+        /// <summary>
+        /// 設定なし
+        /// </summary>
         None,
     }
 
@@ -39,24 +42,17 @@ public class DropdownItemCreate : MonoBehaviour
         switch (dropdownCategory)
         {
             case DropdownCategory.Attribute:
-                dropdownBox.AddItemComponent(new DropdownItemComponent("fire", null, "1"));
-                dropdownBox.AddItemComponent(new DropdownItemComponent("water", null, "2"));
-                dropdownBox.AddItemComponent(new DropdownItemComponent("leaf", null, "3"));
+                CreateAttribute();
                 break;
             case DropdownCategory.None:
                 break;
         }
     }
 
-    // Use this for initialization
-    void Start()
+    private void CreateAttribute()
     {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
+        dropdownBox.AddItemComponent(new DropdownItemComponent("fire", null, "1"));
+        dropdownBox.AddItemComponent(new DropdownItemComponent("water", null, "2"));
+        dropdownBox.AddItemComponent(new DropdownItemComponent("leaf", null, "3"));
     }
 }
