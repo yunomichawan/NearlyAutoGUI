@@ -84,6 +84,7 @@ public class DropdownBox : Dropdown
     {
         Debug.Log("next:" + index.ToString() + ",now:" + value.ToString());
         this.value = index;
+        this.captionText.text = this.DropdownItemList[index].Text;
     }
 
     /// <summary>

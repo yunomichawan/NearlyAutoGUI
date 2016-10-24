@@ -42,7 +42,8 @@ public class AutiGuiSampleManager : MonoBehaviour
     #region button event
 
     /// <summary>
-    /// UIにキャラクターデータを表示する。
+    /// UI(入力コントロール群)にキャラクターデータを表示する。
+    /// 「→」ボタンのイベントです。
     /// </summary>
     public void ShowCharacterInput()
     {
@@ -51,6 +52,7 @@ public class AutiGuiSampleManager : MonoBehaviour
 
     /// <summary>
     /// UIにキャラクターデータを表示する。
+    /// 「Show Output」ボタンのイベントです。
     /// </summary>
     public void ShowCharacterDataOutput()
     {
@@ -59,6 +61,7 @@ public class AutiGuiSampleManager : MonoBehaviour
 
     /// <summary>
     /// UIに選択データを表示する。
+    /// 「Show Toggle Status」ボタンのイベントです。
     /// </summary>
     public void ShowToggleStatus()
     {
@@ -67,6 +70,7 @@ public class AutiGuiSampleManager : MonoBehaviour
 
     /// <summary>
     /// 入力されたデータを取得
+    /// 「Get Input Data」ボタンのイベントです。
     /// </summary>
     public void GetCharacterInput()
     {
@@ -81,6 +85,7 @@ public class AutiGuiSampleManager : MonoBehaviour
 
     /// <summary>
     /// 入力値を反映させる
+    /// 「←」ボタンのイベントです
     /// </summary>
     public void ReflectionInputData()
     {
